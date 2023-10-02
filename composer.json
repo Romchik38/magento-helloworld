@@ -1,0 +1,22 @@
+{
+    "name": "romchik38/hello-world",
+    "description": "simple magento module",
+    "type": "magento2-module",
+    "license": "MIT",
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Romchik38\\HelloWorld\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Romchik38",
+            "email": "pomahehko.c@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2.10"
+    }
+}
