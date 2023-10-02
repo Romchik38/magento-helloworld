@@ -15,15 +15,14 @@ $message = '';
 // 1 checking function get
 $message = $g1->get();
 
-// 2 checking function get
+// 2 checking type of returning value
 $messageType = gettype($message);
 if ($messageType !== 'string') {
     $errorMessage = "expecting type \"string\"" . $messageType . " given";
     throw new \Exception($errorMessage);
 }
 
-// 3 checking message
-
+// 3 checking message value
 if ($message !== $testPhrase) {
     $errorMessage = "expecting message: \"" . $testPhrase . "\", given: \"" . $message . "\"";
     throw new \Exception($errorMessage);
